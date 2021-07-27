@@ -2,6 +2,14 @@
 
 With this repo you can quickly get up and running with Headless Ghost + NextJS.
 
+Set the following env variables in `.env.local`
+
+- NEXT_PUBLIC_GHOST_URL
+- NEXT_PUBLIC_GHOST_KEY
+- NEXT_PUBLIC_BLOG_TITLE
+- NEXT_PUBLIC_BLOG_URL
+- NEXT_PUBLIC_TWITTER_HANDLE
+
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

@@ -1,9 +1,24 @@
 import '../styles/globals.css'
 import { subscribeEmail } from "../lib/posts"
+import { DefaultSeo } from 'next-seo'
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <div className="container">
+      <DefaultSeo
+        titleTemplate={`%s | ${process.env.NEXT_PUBLIC_BLOG_TITLE}`}
+        openGraph={{
+          type: 'website',
+          locale: 'en_EN',
+          url: process.env.NEXT_PUBLIC_BLOG_URL,
+          site_name: process.env.NEXT_PUBLIC_BLOG_TITLE,
+        }}
+        twitter={{
+          handle: process.env.NEXT_PUBLIC_TWITTER_HANDLE,
+          // cardType: 'summary_large_image',
+        }}
+      />
       <Component {...pageProps} />
       <form 
         className="border-4 bg-white p-8 my-8"

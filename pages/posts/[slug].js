@@ -17,7 +17,7 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const post = await getSinglePost(context.params.slug)
-  console.log(post)
+
   if (!post) return { notFound: true }
 
   return {

@@ -1,7 +1,7 @@
 import Head from "next/head"
 import { getPosts } from "../lib/posts"
 import Link from "next/link"
-import { DefaultSeo } from 'next-seo'
+import { NextSeo } from 'next-seo'
 
 import moment from "moment"
 
@@ -25,18 +25,9 @@ export default function Home({ posts }) {
 
   return (
     <>
-      <DefaultSeo
-        titleTemplate = '%s | Maelstrom'
-        openGraph={{
-          type: 'website',
-          locale: 'en_EN',
-          url: 'https://blog.lyser.io',
-          site_name: 'Maelstrom',
-        }}
-        twitter={{
-          handle: '@vincelwt',
-          // cardType: 'summary_large_image',
-        }}
+
+      <NextSeo
+        title="All Posts"
       />
 
       <main className="">
