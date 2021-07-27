@@ -28,11 +28,14 @@ function MyApp({ Component, pageProps }) {
         }}>
         <span className='mb-3'>Subscribe to get future posts. No spam ever.</span>
         <br/>
-        <div className='flex align-center my-4 '>
+        <div className='flex align-center mt-4 mb-1'>
           <input className="flex-1 shadow mr-3 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="email" name="email"/>
           <button className="btn btn-blue" type='submit'>Subscribe →</button>
         </div>
       </form>
+      <p className='text-center text-sm opacity-80'>
+        <a href='https://twitter.com/vincelwt'>twitter</a> - <a href='https://github.com/vincelwt/ghost-next-minimal'>github</a>
+      </p>
     </div>
   )
 }
